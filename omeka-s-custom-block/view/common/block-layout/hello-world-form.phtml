@@ -1,0 +1,28 @@
+<div class="block-hello-world-form">
+    
+    <!-- Heading Input -->
+    <div class="field">
+
+         <label for="hello-world-heading">
+            <?= $this->translate("Heading") ?>
+        </label>
+
+        <input
+            type="text"
+            name="o:block[__blockIndex__][o:data][heading]"
+        />
+
+    </div>
+        <!-- Message Input -->
+        <div class="field">
+
+        <label for="hello-world-message">
+            <?= $this->translate("Message") ?>
+        </label>
+
+        <input
+            type="text"
+            name="o:block[__blockIndex__][o:data][message]"
+        />
+    </div>
+</div>

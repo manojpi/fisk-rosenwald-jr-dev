@@ -1,0 +1,25 @@
+<div class="block block-hello-world">
+    
+    <?php if ($heading): ?>
+        <h2 class="hello-world-heading">
+            <?= $this->escapeHtml($heading) ?>
+        </h2>
+    <?php endif; ?>
+
+    <?php if ($message): ?>
+        <div class="hello-world-message">
+            <?= $this->escapeHtml($message) ?>
+        </div>
+    <?php endif; ?>
+
+</div>
+
+<style>
+/* Inline styles for the block */
+.block-hello-world {
+    padding: 10px;
+    background: gray;
+    color: white;
+    border-radius: 8px;
+}
+</style>
