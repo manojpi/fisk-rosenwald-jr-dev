@@ -1,0 +1,16 @@
+<?php if ($items): ?>
+    <div class="api-filter-block">
+        <h3>Items matching “<?= $this->escapeHtml($keyword) ?>”</h3>
+        <ul>
+            <?php foreach ($items as $item): ?>
+                <li>
+                    <a href="<?= $item->siteUrl() ?>">
+                        <?= $this->escapeHtml($item->displayTitle()) ?>
+                    </a>
+                </li>
+            <?php endforeach; ?>
+        </ul>
+    </div>
+<?php else: ?>
+    <p>No items found for “<?= $this->escapeHtml($keyword) ?>”.</p>
+<?php endif; ?>

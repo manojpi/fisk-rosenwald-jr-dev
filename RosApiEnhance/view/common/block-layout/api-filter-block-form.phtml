@@ -1,0 +1,14 @@
+<?php
+$keyword = $data['keyword'] ?? '';
+$limit = $data['limit'] ?? 5;
+?>
+
+<div class="field">
+    <label>Keyword</label>
+    <input type="text" name="o:block[__blockIndex__][o:data][keyword]" value="<?= $this->escapeHtml($keyword) ?>">
+</div>
+
+<div class="field">
+    <label>Max number of items</label>
+    <input type="number" name="o:block[__blockIndex__][o:data][limit]" value="<?= $this->escapeHtml($limit) ?>" min="1">
+</div>
